@@ -1,0 +1,1887 @@
+{
+    "plays": [
+        {
+            "___progress": "100%",
+            "__changed": 0,
+            "__failed": 0,
+            "__ignored": 0,
+            "__in progress": 0,
+            "__ok": 3,
+            "__percent_complete": 100,
+            "__play_name": "Check Status",
+            "__progress": "Complete",
+            "__skipped": 0,
+            "__task_count": 3,
+            "__unreachable": 0,
+            "name": "Check Status",
+            "pattern": "node1",
+            "play": "Check Status",
+            "play_pattern": "node1",
+            "play_uuid": "2ae66d33-0a0a-a26d-e20e-000000000005",
+            "playbook": "/home/student/ansible-files/service_state.yaml",
+            "playbook_uuid": "07466490-c5e9-45b9-9b3e-6599042dfcf3",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "2s",
+                    "__host": "node1",
+                    "__number": 0,
+                    "__result": "Ok",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 1.689442,
+                    "end": "2023-03-29T08:17:54.952163",
+                    "event_loop": null,
+                    "host": "node1",
+                    "play": "Check Status",
+                    "play_pattern": "node1",
+                    "play_uuid": "2ae66d33-0a0a-a26d-e20e-000000000005",
+                    "playbook": "/home/student/ansible-files/service_state.yaml",
+                    "playbook_uuid": "07466490-c5e9-45b9-9b3e-6599042dfcf3",
+                    "remote_addr": "node1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_override": true,
+                        "ansible_facts": {
+                            "ansible_all_ipv4_addresses": [
+                                "172.16.117.75"
+                            ],
+                            "ansible_all_ipv6_addresses": [
+                                "fe80::2a:8cff:fe74:1942"
+                            ],
+                            "ansible_apparmor": {
+                                "status": "disabled"
+                            },
+                            "ansible_architecture": "x86_64",
+                            "ansible_bios_date": "10/16/2017",
+                            "ansible_bios_vendor": "Amazon EC2",
+                            "ansible_bios_version": "1.0",
+                            "ansible_board_asset_tag": "i-0be1884464ed0ebef",
+                            "ansible_board_name": "NA",
+                            "ansible_board_serial": "NA",
+                            "ansible_board_vendor": "Amazon EC2",
+                            "ansible_board_version": "NA",
+                            "ansible_chassis_asset_tag": "Amazon EC2",
+                            "ansible_chassis_serial": "NA",
+                            "ansible_chassis_vendor": "Amazon EC2",
+                            "ansible_chassis_version": "NA",
+                            "ansible_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-425.13.1.el8_7.x86_64",
+                                "console": "tty0",
+                                "crashkernel": "auto",
+                                "net.ifnames": "0",
+                                "nvme_core.io_timeout": "4294967295",
+                                "rd.blacklist": "nouveau",
+                                "root": "UUID=94e5ddbc-aafe-4aab-9dcc-2e0233ad83bc"
+                            },
+                            "ansible_date_time": {
+                                "date": "2023-03-29",
+                                "day": "29",
+                                "epoch": "1680077874",
+                                "epoch_int": "1680077874",
+                                "hour": "08",
+                                "iso8601": "2023-03-29T08:17:54Z",
+                                "iso8601_basic": "20230329T081754595053",
+                                "iso8601_basic_short": "20230329T081754",
+                                "iso8601_micro": "2023-03-29T08:17:54.595053Z",
+                                "minute": "17",
+                                "month": "03",
+                                "second": "54",
+                                "time": "08:17:54",
+                                "tz": "UTC",
+                                "tz_dst": "UTC",
+                                "tz_offset": "+0000",
+                                "weekday": "Wednesday",
+                                "weekday_number": "3",
+                                "weeknumber": "13",
+                                "year": "2023"
+                            },
+                            "ansible_default_ipv4": {
+                                "address": "172.16.117.75",
+                                "alias": "eth0",
+                                "broadcast": "172.16.255.255",
+                                "gateway": "172.16.0.1",
+                                "interface": "eth0",
+                                "macaddress": "02:2a:8c:74:19:42",
+                                "mtu": 9001,
+                                "netmask": "255.255.0.0",
+                                "network": "172.16.0.0",
+                                "prefix": "16",
+                                "type": "ether"
+                            },
+                            "ansible_default_ipv6": {},
+                            "ansible_device_links": {
+                                "ids": {
+                                    "nvme0n1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol0dd96d118e2913e42",
+                                        "nvme-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                    ],
+                                    "nvme0n1p1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol0dd96d118e2913e42-part1",
+                                        "nvme-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                        "wwn-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                    ],
+                                    "nvme0n1p2": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol0dd96d118e2913e42-part2",
+                                        "nvme-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                        "wwn-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                    ]
+                                },
+                                "labels": {
+                                    "nvme0n1p2": [
+                                        "root"
+                                    ]
+                                },
+                                "masters": {},
+                                "uuids": {
+                                    "nvme0n1p2": [
+                                        "94e5ddbc-aafe-4aab-9dcc-2e0233ad83bc"
+                                    ]
+                                }
+                            },
+                            "ansible_devices": {
+                                "nvme0n1": {
+                                    "holders": [],
+                                    "host": "Non-Volatile memory controller: Amazon.com, Inc. NVMe EBS Controller",
+                                    "links": {
+                                        "ids": [
+                                            "nvme-Amazon_Elastic_Block_Store_vol0dd96d118e2913e42",
+                                            "nvme-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                        ],
+                                        "labels": [],
+                                        "masters": [],
+                                        "uuids": []
+                                    },
+                                    "model": "Amazon Elastic Block Store",
+                                    "partitions": {
+                                        "nvme0n1p1": {
+                                            "holders": [],
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol0dd96d118e2913e42-part1",
+                                                    "nvme-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                                    "wwn-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                                ],
+                                                "labels": [],
+                                                "masters": [],
+                                                "uuids": []
+                                            },
+                                            "sectors": "2048",
+                                            "sectorsize": 512,
+                                            "size": "1.00 MB",
+                                            "start": "2048",
+                                            "uuid": null
+                                        },
+                                        "nvme0n1p2": {
+                                            "holders": [],
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol0dd96d118e2913e42-part2",
+                                                    "nvme-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                                    "wwn-nvme.1d0f-766f6c3064643936643131386532393133653432-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                                ],
+                                                "labels": [
+                                                    "root"
+                                                ],
+                                                "masters": [],
+                                                "uuids": [
+                                                    "94e5ddbc-aafe-4aab-9dcc-2e0233ad83bc"
+                                                ]
+                                            },
+                                            "sectors": "20967391",
+                                            "sectorsize": 512,
+                                            "size": "10.00 GB",
+                                            "start": "4096",
+                                            "uuid": "94e5ddbc-aafe-4aab-9dcc-2e0233ad83bc"
+                                        }
+                                    },
+                                    "removable": "0",
+                                    "rotational": "0",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "scheduler_mode": "none",
+                                    "sectors": "20971520",
+                                    "sectorsize": "512",
+                                    "serial": "vol0dd96d118e2913e42",
+                                    "size": "10.00 GB",
+                                    "support_discard": "0",
+                                    "vendor": null,
+                                    "virtual": 1
+                                }
+                            },
+                            "ansible_distribution": "RedHat",
+                            "ansible_distribution_file_parsed": true,
+                            "ansible_distribution_file_path": "/etc/redhat-release",
+                            "ansible_distribution_file_search_string": "Red Hat",
+                            "ansible_distribution_file_variety": "RedHat",
+                            "ansible_distribution_major_version": "8",
+                            "ansible_distribution_release": "Ootpa",
+                            "ansible_distribution_version": "8.7",
+                            "ansible_dns": {
+                                "nameservers": [
+                                    "172.16.0.2"
+                                ],
+                                "search": [
+                                    "us-east-2.compute.internal"
+                                ]
+                            },
+                            "ansible_domain": "example.com",
+                            "ansible_effective_group_id": 0,
+                            "ansible_effective_user_id": 0,
+                            "ansible_eth0": {
+                                "active": true,
+                                "device": "eth0",
+                                "features": {
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "generic_receive_offload": "on",
+                                    "generic_segmentation_offload": "on",
+                                    "highdma": "on",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "large_receive_offload": "off [fixed]",
+                                    "loopback": "off [fixed]",
+                                    "netns_local": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "on",
+                                    "rx_all": "off [fixed]",
+                                    "rx_checksumming": "off [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "rx_gro_list": "off",
+                                    "rx_udp_gro_forwarding": "off",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "scatter_gather": "on",
+                                    "tcp_segmentation_offload": "off",
+                                    "tls_hw_record": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_ip_generic": "off [fixed]",
+                                    "tx_checksum_ipv4": "on",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_sctp": "off [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gso_list": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_lockless": "off [fixed]",
+                                    "tx_nocache_copy": "off",
+                                    "tx_scatter_gather": "on",
+                                    "tx_scatter_gather_fraglist": "off [fixed]",
+                                    "tx_sctp_segmentation": "off [fixed]",
+                                    "tx_tcp6_segmentation": "off [fixed]",
+                                    "tx_tcp_ecn_segmentation": "off [fixed]",
+                                    "tx_tcp_mangleid_segmentation": "off [fixed]",
+                                    "tx_tcp_segmentation": "off [fixed]",
+                                    "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "vlan_challenged": "off [fixed]"
+                                },
+                                "hw_timestamp_filters": [],
+                                "ipv4": {
+                                    "address": "172.16.117.75",
+                                    "broadcast": "172.16.255.255",
+                                    "netmask": "255.255.0.0",
+                                    "network": "172.16.0.0",
+                                    "prefix": "16"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "fe80::2a:8cff:fe74:1942",
+                                        "prefix": "64",
+                                        "scope": "link"
+                                    }
+                                ],
+                                "macaddress": "02:2a:8c:74:19:42",
+                                "module": "ena",
+                                "mtu": 9001,
+                                "pciid": "0000:00:05.0",
+                                "promisc": false,
+                                "timestamping": [],
+                                "type": "ether"
+                            },
+                            "ansible_fibre_channel_wwn": [],
+                            "ansible_fips": false,
+                            "ansible_form_factor": "Other",
+                            "ansible_fqdn": "node1.example.com",
+                            "ansible_hostname": "node1",
+                            "ansible_hostnqn": "",
+                            "ansible_interfaces": [
+                                "lo",
+                                "eth0"
+                            ],
+                            "ansible_is_chroot": false,
+                            "ansible_iscsi_iqn": "",
+                            "ansible_kernel": "4.18.0-425.13.1.el8_7.x86_64",
+                            "ansible_kernel_version": "#1 SMP Thu Feb 2 13:01:45 EST 2023",
+                            "ansible_lo": {
+                                "active": true,
+                                "device": "lo",
+                                "features": {
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "generic_receive_offload": "on",
+                                    "generic_segmentation_offload": "on",
+                                    "highdma": "on [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "large_receive_offload": "off [fixed]",
+                                    "loopback": "on [fixed]",
+                                    "netns_local": "on [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "rx_checksumming": "on [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "rx_gro_list": "off",
+                                    "rx_udp_gro_forwarding": "off",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "scatter_gather": "on",
+                                    "tcp_segmentation_offload": "on",
+                                    "tls_hw_record": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_ip_generic": "on [fixed]",
+                                    "tx_checksum_ipv4": "off [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_sctp": "on [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gso_list": "on",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_lockless": "on [fixed]",
+                                    "tx_nocache_copy": "off [fixed]",
+                                    "tx_scatter_gather": "on [fixed]",
+                                    "tx_scatter_gather_fraglist": "on [fixed]",
+                                    "tx_sctp_segmentation": "on",
+                                    "tx_tcp6_segmentation": "on",
+                                    "tx_tcp_ecn_segmentation": "on",
+                                    "tx_tcp_mangleid_segmentation": "on",
+                                    "tx_tcp_segmentation": "on",
+                                    "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "on",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "vlan_challenged": "on [fixed]"
+                                },
+                                "hw_timestamp_filters": [],
+                                "ipv4": {
+                                    "address": "127.0.0.1",
+                                    "broadcast": "",
+                                    "netmask": "255.0.0.0",
+                                    "network": "127.0.0.0",
+                                    "prefix": "8"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "::1",
+                                        "prefix": "128",
+                                        "scope": "host"
+                                    }
+                                ],
+                                "mtu": 65536,
+                                "promisc": false,
+                                "timestamping": [],
+                                "type": "loopback"
+                            },
+                            "ansible_loadavg": {
+                                "15m": 0.01,
+                                "1m": 0.09,
+                                "5m": 0.02
+                            },
+                            "ansible_local": {},
+                            "ansible_lsb": {},
+                            "ansible_lvm": "N/A",
+                            "ansible_machine": "x86_64",
+                            "ansible_machine_id": "ec2c64ac82e342bc142217b187880e54",
+                            "ansible_memfree_mb": 153,
+                            "ansible_memory_mb": {
+                                "nocache": {
+                                    "free": 561,
+                                    "used": 215
+                                },
+                                "real": {
+                                    "free": 153,
+                                    "total": 776,
+                                    "used": 623
+                                },
+                                "swap": {
+                                    "cached": 0,
+                                    "free": 0,
+                                    "total": 0,
+                                    "used": 0
+                                }
+                            },
+                            "ansible_memtotal_mb": 776,
+                            "ansible_mounts": [
+                                {
+                                    "block_available": 2091975,
+                                    "block_size": 4096,
+                                    "block_total": 2618363,
+                                    "block_used": 526388,
+                                    "device": "/dev/nvme0n1p2",
+                                    "fstype": "xfs",
+                                    "inode_available": 5204583,
+                                    "inode_total": 5241792,
+                                    "inode_used": 37209,
+                                    "mount": "/",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                                    "size_available": 8568729600,
+                                    "size_total": 10724814848,
+                                    "uuid": "94e5ddbc-aafe-4aab-9dcc-2e0233ad83bc"
+                                }
+                            ],
+                            "ansible_nodename": "node1",
+                            "ansible_os_family": "RedHat",
+                            "ansible_pkg_mgr": "dnf",
+                            "ansible_proc_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-425.13.1.el8_7.x86_64",
+                                "console": [
+                                    "ttyS0,115200n8",
+                                    "tty0"
+                                ],
+                                "crashkernel": "auto",
+                                "net.ifnames": "0",
+                                "nvme_core.io_timeout": "4294967295",
+                                "rd.blacklist": "nouveau",
+                                "root": "UUID=94e5ddbc-aafe-4aab-9dcc-2e0233ad83bc"
+                            },
+                            "ansible_processor": [
+                                "0",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz",
+                                "1",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+                            ],
+                            "ansible_processor_cores": 1,
+                            "ansible_processor_count": 1,
+                            "ansible_processor_nproc": 2,
+                            "ansible_processor_threads_per_core": 2,
+                            "ansible_processor_vcpus": 2,
+                            "ansible_product_name": "t3.micro",
+                            "ansible_product_serial": "ec2c64ac-82e3-42bc-1422-17b187880e54",
+                            "ansible_product_uuid": "ec2c64ac-82e3-42bc-1422-17b187880e54",
+                            "ansible_product_version": "NA",
+                            "ansible_python": {
+                                "executable": "/usr/libexec/platform-python",
+                                "has_sslcontext": true,
+                                "type": "cpython",
+                                "version": {
+                                    "major": 3,
+                                    "micro": 8,
+                                    "minor": 6,
+                                    "releaselevel": "final",
+                                    "serial": 0
+                                },
+                                "version_info": [
+                                    3,
+                                    6,
+                                    8,
+                                    "final",
+                                    0
+                                ]
+                            },
+                            "ansible_python_version": "3.6.8",
+                            "ansible_real_group_id": 0,
+                            "ansible_real_user_id": 0,
+                            "ansible_selinux": {
+                                "config_mode": "enforcing",
+                                "mode": "enforcing",
+                                "policyvers": 33,
+                                "status": "enabled",
+                                "type": "targeted"
+                            },
+                            "ansible_selinux_python_present": true,
+                            "ansible_service_mgr": "systemd",
+                            "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBG0Zg0TXvpWZWB09rGgB2c1JLOZR29RW1jInf8CFwYQJp0ygiGrAb87YFlwbDdDly/0xljsqAnmOsTWzLN8HCWE=",
+                            "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+                            "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIEVauxGdvvDC6hPAChgZI9GCNKFQ402mls7yYWCTVh/n",
+                            "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+                            "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQChDYfDI3VacE7STYmXx3aJ98tACVRad4mW3r3N6+XgMynlbpcPU+pK247LkIogy8jO5xCZqdp71VAgKp81++GI+GHblcoHhvcVhjZUzZAR+nb0Y9LeGKXUQOfbPxqLaNOx+8xVVuvw46sgcmzR8a6+Yezv5iGHMBEBeJOEYUlMYhzrDweQO6zPIKrXUHf6mziaNKxv0dqjzP8X6tf1IxmvUiW3sujrt1JPwjhJM2YgqmaHwok5xJV3AK7PjlvvfR5EEHK4vgnpO9M1zX/yotBBBhDDZkxyvCjkUeHDj+bGq/w91+jZcGQ5bS2iS3T6gQhDrf5OmxRf8ihJPuEEZ7KuoxJLXlSqHvG0itkfGoJMLr4BuMP7TcIgCaF1MSh38Ex172MYkgLBUjr4KWOy5abOX6Y4hxjAPaPQTnkG4Erua7lS3yIEYyByVns4i7qN0dwdjMgKN2eOL5qYSJfOSAnEcQ3kyBLEBPVPqSunO6+lSGfYR48kqRg7/WRiDBhNSac=",
+                            "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+                            "ansible_swapfree_mb": 0,
+                            "ansible_swaptotal_mb": 0,
+                            "ansible_system": "Linux",
+                            "ansible_system_capabilities": [],
+                            "ansible_system_capabilities_enforced": "False",
+                            "ansible_system_vendor": "Amazon EC2",
+                            "ansible_uptime_seconds": 11917,
+                            "ansible_user_dir": "/root",
+                            "ansible_user_gecos": "root",
+                            "ansible_user_gid": 0,
+                            "ansible_user_id": "root",
+                            "ansible_user_shell": "/bin/bash",
+                            "ansible_user_uid": 0,
+                            "ansible_userspace_architecture": "x86_64",
+                            "ansible_userspace_bits": "64",
+                            "ansible_virtualization_role": "guest",
+                            "ansible_virtualization_tech_guest": [
+                                "kvm"
+                            ],
+                            "ansible_virtualization_tech_host": [],
+                            "ansible_virtualization_type": "kvm",
+                            "discovered_interpreter_python": "/usr/libexec/platform-python",
+                            "gather_subset": [
+                                "all"
+                            ],
+                            "module_setup": true
+                        },
+                        "changed": false,
+                        "deprecations": [],
+                        "warnings": []
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2023-03-29T08:17:53.262721",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/student/ansible-files/service_state.yaml:2",
+                    "task_uuid": "2ae66d33-0a0a-a26d-e20e-00000000000c",
+                    "uuid": "774fca8d-6426-4014-b0b9-c23a34d1c88c"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "2s",
+                    "__host": "node1",
+                    "__number": 1,
+                    "__result": "Ok",
+                    "__task": "Check status of httpd service",
+                    "__task_action": "service_facts",
+                    "duration": 2.05961,
+                    "end": "2023-03-29T08:17:57.035848",
+                    "event_loop": null,
+                    "host": "node1",
+                    "play": "Check Status",
+                    "play_pattern": "node1",
+                    "play_uuid": "2ae66d33-0a0a-a26d-e20e-000000000005",
+                    "playbook": "/home/student/ansible-files/service_state.yaml",
+                    "playbook_uuid": "07466490-c5e9-45b9-9b3e-6599042dfcf3",
+                    "remote_addr": "node1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "ansible_facts": {
+                            "services": {
+                                "NetworkManager-dispatcher.service": {
+                                    "name": "NetworkManager-dispatcher.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "enabled"
+                                },
+                                "NetworkManager-wait-online.service": {
+                                    "name": "NetworkManager-wait-online.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "NetworkManager.service": {
+                                    "name": "NetworkManager.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "auditd.service": {
+                                    "name": "auditd.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "auto-cpufreq.service": {
+                                    "name": "auto-cpufreq.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "autovt@.service": {
+                                    "name": "autovt@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "enabled"
+                                },
+                                "choose_repo": {
+                                    "name": "choose_repo",
+                                    "source": "sysv",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "choose_repo.service": {
+                                    "name": "choose_repo.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "generated"
+                                },
+                                "chrony-dnssrv@.service": {
+                                    "name": "chrony-dnssrv@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "chrony-wait.service": {
+                                    "name": "chrony-wait.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "chronyd.service": {
+                                    "name": "chronyd.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "cloud-config.service": {
+                                    "name": "cloud-config.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "cloud-final.service": {
+                                    "name": "cloud-final.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "cloud-init-hotplugd.service": {
+                                    "name": "cloud-init-hotplugd.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "cloud-init-local.service": {
+                                    "name": "cloud-init-local.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "cloud-init.service": {
+                                    "name": "cloud-init.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "console-getty.service": {
+                                    "name": "console-getty.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "container-getty@.service": {
+                                    "name": "container-getty@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "cpupower.service": {
+                                    "name": "cpupower.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "disabled"
+                                },
+                                "crond.service": {
+                                    "name": "crond.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "dbus-org.freedesktop.hostname1.service": {
+                                    "name": "dbus-org.freedesktop.hostname1.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "dbus-org.freedesktop.locale1.service": {
+                                    "name": "dbus-org.freedesktop.locale1.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "dbus-org.freedesktop.login1.service": {
+                                    "name": "dbus-org.freedesktop.login1.service",
+                                    "source": "systemd",
+                                    "state": "active",
+                                    "status": "static"
+                                },
+                                "dbus-org.freedesktop.nm-dispatcher.service": {
+                                    "name": "dbus-org.freedesktop.nm-dispatcher.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "enabled"
+                                },
+                                "dbus-org.freedesktop.portable1.service": {
+                                    "name": "dbus-org.freedesktop.portable1.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "dbus-org.freedesktop.timedate1.service": {
+                                    "name": "dbus-org.freedesktop.timedate1.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "enabled"
+                                },
+                                "dbus.service": {
+                                    "name": "dbus.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "static"
+                                },
+                                "debug-shell.service": {
+                                    "name": "debug-shell.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "display-manager.service": {
+                                    "name": "display-manager.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "dnf-makecache.service": {
+                                    "name": "dnf-makecache.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-cmdline.service": {
+                                    "name": "dracut-cmdline.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-initqueue.service": {
+                                    "name": "dracut-initqueue.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-mount.service": {
+                                    "name": "dracut-mount.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-pre-mount.service": {
+                                    "name": "dracut-pre-mount.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-pre-pivot.service": {
+                                    "name": "dracut-pre-pivot.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-pre-trigger.service": {
+                                    "name": "dracut-pre-trigger.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-pre-udev.service": {
+                                    "name": "dracut-pre-udev.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-shutdown-onfailure.service": {
+                                    "name": "dracut-shutdown-onfailure.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "dracut-shutdown.service": {
+                                    "name": "dracut-shutdown.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "emergency.service": {
+                                    "name": "emergency.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "fstrim.service": {
+                                    "name": "fstrim.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "getty@.service": {
+                                    "name": "getty@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "enabled"
+                                },
+                                "getty@tty1.service": {
+                                    "name": "getty@tty1.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "active"
+                                },
+                                "grub-boot-indeterminate.service": {
+                                    "name": "grub-boot-indeterminate.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "halt-local.service": {
+                                    "name": "halt-local.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "htcacheclean.service": {
+                                    "name": "htcacheclean.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "httpd-init.service": {
+                                    "name": "httpd-init.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "httpd.service": {
+                                    "name": "httpd.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "httpd@.service": {
+                                    "name": "httpd@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "disabled"
+                                },
+                                "hv_kvp_daemon.service": {
+                                    "name": "hv_kvp_daemon.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "import-state.service": {
+                                    "name": "import-state.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "initrd-cleanup.service": {
+                                    "name": "initrd-cleanup.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "initrd-parse-etc.service": {
+                                    "name": "initrd-parse-etc.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "initrd-switch-root.service": {
+                                    "name": "initrd-switch-root.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "initrd-udevadm-cleanup-db.service": {
+                                    "name": "initrd-udevadm-cleanup-db.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "insights-client-boot.service": {
+                                    "name": "insights-client-boot.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "insights-client-results.service": {
+                                    "name": "insights-client-results.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "insights-client.service": {
+                                    "name": "insights-client.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "insights-register.service": {
+                                    "name": "insights-register.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "insights-unregister.service": {
+                                    "name": "insights-unregister.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "insights-unregistered.service": {
+                                    "name": "insights-unregistered.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "irqbalance.service": {
+                                    "name": "irqbalance.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "kdump.service": {
+                                    "name": "kdump.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "kmod-static-nodes.service": {
+                                    "name": "kmod-static-nodes.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "kvm_stat.service": {
+                                    "name": "kvm_stat.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "ldconfig.service": {
+                                    "name": "ldconfig.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "loadmodules.service": {
+                                    "name": "loadmodules.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "man-db-cache-update.service": {
+                                    "name": "man-db-cache-update.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "man-db-restart-cache-update.service": {
+                                    "name": "man-db-restart-cache-update.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "messagebus.service": {
+                                    "name": "messagebus.service",
+                                    "source": "systemd",
+                                    "state": "active",
+                                    "status": "static"
+                                },
+                                "microcode.service": {
+                                    "name": "microcode.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "network.service": {
+                                    "name": "network.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "nis-domainname.service": {
+                                    "name": "nis-domainname.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "nm-cloud-setup.service": {
+                                    "name": "nm-cloud-setup.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "ntpd.service": {
+                                    "name": "ntpd.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "ntpdate.service": {
+                                    "name": "ntpdate.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "oddjobd.service": {
+                                    "name": "oddjobd.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "plymouth-quit-wait.service": {
+                                    "name": "plymouth-quit-wait.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "plymouth-start.service": {
+                                    "name": "plymouth-start.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "polkit.service": {
+                                    "name": "polkit.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "static"
+                                },
+                                "power-profiles-daemon.service": {
+                                    "name": "power-profiles-daemon.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "quotaon.service": {
+                                    "name": "quotaon.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "rc-local.service": {
+                                    "name": "rc-local.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "rdisc.service": {
+                                    "name": "rdisc.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "rescue.service": {
+                                    "name": "rescue.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "rh-cloud-firstboot": {
+                                    "name": "rh-cloud-firstboot",
+                                    "source": "sysv",
+                                    "state": "stopped",
+                                    "status": "disabled"
+                                },
+                                "rh-cloud-firstboot.service": {
+                                    "name": "rh-cloud-firstboot.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "generated"
+                                },
+                                "rhcd-stop.service": {
+                                    "name": "rhcd-stop.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "rhcd.service": {
+                                    "name": "rhcd.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "disabled"
+                                },
+                                "rhsm-facts.service": {
+                                    "name": "rhsm-facts.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "rhsm.service": {
+                                    "name": "rhsm.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "rhsmcertd.service": {
+                                    "name": "rhsmcertd.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "rsyslog.service": {
+                                    "name": "rsyslog.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "selinux-autorelabel-mark.service": {
+                                    "name": "selinux-autorelabel-mark.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "enabled"
+                                },
+                                "selinux-autorelabel.service": {
+                                    "name": "selinux-autorelabel.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "serial-getty@.service": {
+                                    "name": "serial-getty@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "indirect"
+                                },
+                                "serial-getty@ttyS0.service": {
+                                    "name": "serial-getty@ttyS0.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "active"
+                                },
+                                "snapd.seeded.service": {
+                                    "name": "snapd.seeded.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "sntp.service": {
+                                    "name": "sntp.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "sshd-keygen.service": {
+                                    "name": "sshd-keygen.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "sshd-keygen@.service": {
+                                    "name": "sshd-keygen@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "disabled"
+                                },
+                                "sshd-keygen@ecdsa.service": {
+                                    "name": "sshd-keygen@ecdsa.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "inactive"
+                                },
+                                "sshd-keygen@ed25519.service": {
+                                    "name": "sshd-keygen@ed25519.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "inactive"
+                                },
+                                "sshd-keygen@rsa.service": {
+                                    "name": "sshd-keygen@rsa.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "inactive"
+                                },
+                                "sshd.service": {
+                                    "name": "sshd.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "sshd@.service": {
+                                    "name": "sshd@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "sssd-autofs.service": {
+                                    "name": "sssd-autofs.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "indirect"
+                                },
+                                "sssd-kcm.service": {
+                                    "name": "sssd-kcm.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "indirect"
+                                },
+                                "sssd-nss.service": {
+                                    "name": "sssd-nss.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "indirect"
+                                },
+                                "sssd-pac.service": {
+                                    "name": "sssd-pac.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "indirect"
+                                },
+                                "sssd-pam.service": {
+                                    "name": "sssd-pam.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "indirect"
+                                },
+                                "sssd-ssh.service": {
+                                    "name": "sssd-ssh.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "indirect"
+                                },
+                                "sssd-sudo.service": {
+                                    "name": "sssd-sudo.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "indirect"
+                                },
+                                "sssd.service": {
+                                    "name": "sssd.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "syslog.service": {
+                                    "name": "syslog.service",
+                                    "source": "systemd",
+                                    "state": "active",
+                                    "status": "enabled"
+                                },
+                                "system-update-cleanup.service": {
+                                    "name": "system-update-cleanup.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-ask-password-console.service": {
+                                    "name": "systemd-ask-password-console.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-ask-password-wall.service": {
+                                    "name": "systemd-ask-password-wall.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-backlight@.service": {
+                                    "name": "systemd-backlight@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "systemd-binfmt.service": {
+                                    "name": "systemd-binfmt.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-coredump@.service": {
+                                    "name": "systemd-coredump@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "systemd-exit.service": {
+                                    "name": "systemd-exit.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-firstboot.service": {
+                                    "name": "systemd-firstboot.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-fsck-root.service": {
+                                    "name": "systemd-fsck-root.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-fsck@.service": {
+                                    "name": "systemd-fsck@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "systemd-halt.service": {
+                                    "name": "systemd-halt.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-hibernate-resume@.service": {
+                                    "name": "systemd-hibernate-resume@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "systemd-hibernate.service": {
+                                    "name": "systemd-hibernate.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-hostnamed.service": {
+                                    "name": "systemd-hostnamed.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-hwdb-update.service": {
+                                    "name": "systemd-hwdb-update.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-hybrid-sleep.service": {
+                                    "name": "systemd-hybrid-sleep.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-initctl.service": {
+                                    "name": "systemd-initctl.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-journal-catalog-update.service": {
+                                    "name": "systemd-journal-catalog-update.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-journal-flush.service": {
+                                    "name": "systemd-journal-flush.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-journald.service": {
+                                    "name": "systemd-journald.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "static"
+                                },
+                                "systemd-kexec.service": {
+                                    "name": "systemd-kexec.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-localed.service": {
+                                    "name": "systemd-localed.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-logind.service": {
+                                    "name": "systemd-logind.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "static"
+                                },
+                                "systemd-machine-id-commit.service": {
+                                    "name": "systemd-machine-id-commit.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-modules-load.service": {
+                                    "name": "systemd-modules-load.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-networkd-wait-online.service": {
+                                    "name": "systemd-networkd-wait-online.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "systemd-portabled.service": {
+                                    "name": "systemd-portabled.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-poweroff.service": {
+                                    "name": "systemd-poweroff.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-quotacheck.service": {
+                                    "name": "systemd-quotacheck.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-random-seed.service": {
+                                    "name": "systemd-random-seed.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-reboot.service": {
+                                    "name": "systemd-reboot.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-remount-fs.service": {
+                                    "name": "systemd-remount-fs.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-resolved.service": {
+                                    "name": "systemd-resolved.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "systemd-rfkill.service": {
+                                    "name": "systemd-rfkill.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-suspend-then-hibernate.service": {
+                                    "name": "systemd-suspend-then-hibernate.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-suspend.service": {
+                                    "name": "systemd-suspend.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-sysctl.service": {
+                                    "name": "systemd-sysctl.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-sysusers.service": {
+                                    "name": "systemd-sysusers.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-timedated.service": {
+                                    "name": "systemd-timedated.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "masked"
+                                },
+                                "systemd-timesyncd.service": {
+                                    "name": "systemd-timesyncd.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "systemd-tmpfiles-clean.service": {
+                                    "name": "systemd-tmpfiles-clean.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-tmpfiles-setup-dev.service": {
+                                    "name": "systemd-tmpfiles-setup-dev.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-tmpfiles-setup.service": {
+                                    "name": "systemd-tmpfiles-setup.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-udev-settle.service": {
+                                    "name": "systemd-udev-settle.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "systemd-udev-trigger.service": {
+                                    "name": "systemd-udev-trigger.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-udevd.service": {
+                                    "name": "systemd-udevd.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "static"
+                                },
+                                "systemd-update-done.service": {
+                                    "name": "systemd-update-done.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-update-utmp-runlevel.service": {
+                                    "name": "systemd-update-utmp-runlevel.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-update-utmp.service": {
+                                    "name": "systemd-update-utmp.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-user-sessions.service": {
+                                    "name": "systemd-user-sessions.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-vconsole-setup.service": {
+                                    "name": "systemd-vconsole-setup.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "systemd-volatile-root.service": {
+                                    "name": "systemd-volatile-root.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "static"
+                                },
+                                "tcsd.service": {
+                                    "name": "tcsd.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "disabled"
+                                },
+                                "teamd@.service": {
+                                    "name": "teamd@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "timedatex.service": {
+                                    "name": "timedatex.service",
+                                    "source": "systemd",
+                                    "state": "inactive",
+                                    "status": "enabled"
+                                },
+                                "tlp.service": {
+                                    "name": "tlp.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "tuned.service": {
+                                    "name": "tuned.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "enabled"
+                                },
+                                "unbound-anchor.service": {
+                                    "name": "unbound-anchor.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "static"
+                                },
+                                "user-runtime-dir@.service": {
+                                    "name": "user-runtime-dir@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "user-runtime-dir@1000.service": {
+                                    "name": "user-runtime-dir@1000.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "active"
+                                },
+                                "user@.service": {
+                                    "name": "user@.service",
+                                    "source": "systemd",
+                                    "state": "unknown",
+                                    "status": "static"
+                                },
+                                "user@1000.service": {
+                                    "name": "user@1000.service",
+                                    "source": "systemd",
+                                    "state": "running",
+                                    "status": "active"
+                                },
+                                "ypbind.service": {
+                                    "name": "ypbind.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "yppasswdd.service": {
+                                    "name": "yppasswdd.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "ypserv.service": {
+                                    "name": "ypserv.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                },
+                                "ypxfrd.service": {
+                                    "name": "ypxfrd.service",
+                                    "source": "systemd",
+                                    "state": "stopped",
+                                    "status": "not-found"
+                                }
+                            }
+                        },
+                        "changed": false,
+                        "invocation": {
+                            "module_args": {}
+                        }
+                    },
+                    "resolved_action": "ansible.builtin.service_facts",
+                    "start": "2023-03-29T08:17:54.976238",
+                    "task": "Check status of httpd service",
+                    "task_action": "service_facts",
+                    "task_args": "",
+                    "task_path": "/home/student/ansible-files/service_state.yaml:9",
+                    "task_uuid": "2ae66d33-0a0a-a26d-e20e-000000000007",
+                    "uuid": "79444876-9dbb-47d4-a7e3-dfce8aa2e3bd"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "node1",
+                    "__number": 2,
+                    "__result": "Ok",
+                    "__task": "debug",
+                    "__task_action": "debug",
+                    "duration": 0.022347,
+                    "end": "2023-03-29T08:17:57.074410",
+                    "event_loop": null,
+                    "host": "node1",
+                    "play": "Check Status",
+                    "play_pattern": "node1",
+                    "play_uuid": "2ae66d33-0a0a-a26d-e20e-000000000005",
+                    "playbook": "/home/student/ansible-files/service_state.yaml",
+                    "playbook_uuid": "07466490-c5e9-45b9-9b3e-6599042dfcf3",
+                    "remote_addr": "node1",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "_ansible_verbose_always": true,
+                        "changed": false,
+                        "service_state.ansible_facts.services[\"httpd.service\"].state": "running"
+                    },
+                    "resolved_action": "ansible.builtin.debug",
+                    "start": "2023-03-29T08:17:57.052063",
+                    "task": "debug",
+                    "task_action": "debug",
+                    "task_args": "",
+                    "task_path": "/home/student/ansible-files/service_state.yaml:13",
+                    "task_uuid": "2ae66d33-0a0a-a26d-e20e-000000000008",
+                    "uuid": "220876ee-c28b-4bff-b222-30693d775a27"
+                }
+            ],
+            "uuid": "2ae66d33-0a0a-a26d-e20e-000000000005"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/student/lab_inventory/hosts"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/student/ansible-files/service_state.yaml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/student/ansible-files"
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/student/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "image": "registry.redhat.io/ansible-automation-platform-23/ee-supported-rhel8:1.0.0-208",
+                "pull": {
+                    "policy": "missing"
+                },
+                "volume-mounts": [
+                    {
+                        "dest": "/etc/ansible/",
+                        "src": "/etc/ansible/"
+                    }
+                ]
+            },
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/student/ansible-files/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Settings file",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Previous cli command",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Settings file",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Settings file",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Settings file",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Settings file",
+        "ansible-navigator.execution-environment.volume-mounts": "Settings file",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "/home/student/.ansible-navigator.yml",
+        "settings_file_source": "Search path"
+    },
+    "status": "successful",
+    "status_color": 10,
+    "stdout": [
+        "",
+        "PLAY [Check Status] ************************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[0;32mok: [node1]\u001b[0m",
+        "",
+        "TASK [Check status of httpd service] *******************************************",
+        "\u001b[0;32mok: [node1]\u001b[0m",
+        "",
+        "TASK [debug] *******************************************************************",
+        "\u001b[0;32mok: [node1] => {\u001b[0m",
+        "\u001b[0;32m    \"service_state.ansible_facts.services[\\\"httpd.service\\\"].state\": \"running\"\u001b[0m",
+        "\u001b[0;32m}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;32mnode1\u001b[0m                      : \u001b[0;32mok=3   \u001b[0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}
